@@ -8,7 +8,7 @@ pipeline {
     }
     stage('JenkinsRun.bat') {
       steps {
-        bat(script: 'JenkinsRun.bat', returnStdout: true, returnStatus: true)
+        bat(script: 'JenkinsRun', returnStdout: true, returnStatus: true, encoding: 'UTF-8')
       }
     }
   }
